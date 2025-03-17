@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <h1>DOM: Página Interativa com JavaScript</h1>
+
+    <button onclick="incremento()">Incrementar</button>
+    <button onclick="decremento()">Decrementar</button>
+    <span id="contar">0</span>
+
+    <hr>
+
+    <input type="text" placeholder="Digite algo" id="digite" oninput="contador()"> 
+    <span id="caracter">0 caracteres</span>
+
+    <hr>
+
+    <label>Escolha uma opção:</label>
+    <select id="lista" name="list">
+        <option onclick="op1()" id="op1">Lista ordenada</option>
+        <option onclick="op2()" id="op2">Lista não ordenada</option>
+    </select>
+
+    <button id="btn3" type="submit">Adicionar Lista</button>
+
+    <hr>
+    <button onclick="resetar()">Resetar</button>
+
+    <script src="dia17.js"></script>
+</body>
+</html>
