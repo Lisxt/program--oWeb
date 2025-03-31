@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table {
+          width: 20px;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 10px;
+          text-align: left;
+      }
+      .marcado {
+            background-color: yellow;
+        }
+  </style>
+</head>
+<body>
+
+    <h1>Adiconar Item à tabela</h1>
+
+    <input type="text" placeholder="Digite um item" name="" id="ItemAdd">
+    <button id="adicionar">Adicionar</button>
+
+    <h3>Tabela de itens</h3>
+    <table id="tabela">
+        <thead>
+            <th>Item</th>
+          </thead>
+          <tbody>
+          </tbody>
+    </table>
+
+    <h4>Marcar ou Dermarcar o item</h4>
+
+    <select id="itemSelect">
+      <option value="" disabled selected>Selecione um item</option>
+    </select>
+    <button id="marcar" >Marcar</button>
+    <button id="desmarcar" >Desmarcar</button>
+    <button id="remover" >Remover Item</button>
+
+    <script src="js.js"></script>
+</body>
+</html>
